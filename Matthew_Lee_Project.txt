@@ -1,0 +1,18 @@
+Matthew Lee CSE3353 Project Plans
+
+The project I plan on doing is creating a chatbot service that people can interact
+with and best resembles a human. The method I will use to achieve my goals is using a
+recursive neural network. In the beginning, I plan on doing research on basic
+machine learning techniques and math associated with it. Next, I will implement a
+basic neural network because it will be important to helping me understand and build
+a recursive neural network. Once I have developed my recursive neural network,
+I will then develop a primitive version of sequence to sequence learning which will
+be geared towards my chatbot. The reason I will use sequence to sequence learning
+is because there have been chatbots that have been created using this. A good
+example exists on this website: http://lauragelston.ghost.io/speakeasy/ .
+The main challenge I face is the implementation in itself. Building and optimizing
+a neural network requires a lot of calculus, linear algebra, and a understanding
+in statistics which I will have to touch up on. However, My minimum viable project
+will include a full neural network, and a basic chatbot service. If I can't finish
+my recursive neural network or sequence to sequence learning, I will rely on
+TensorFlow's sequence to sequence learning library to build my chatbot.
