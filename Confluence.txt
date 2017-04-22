@@ -1,0 +1,46 @@
+When I first started this project, my goal was to create a chatbot
+that was capable of holding semi realistic conversation with someone. Through
+lots of research, I discovered the best method of achieving my goal was to implement
+a Long Short Term Memory (LSTM) network. Creating a chatbot utilizing LSTM seemed
+easy at first because all you are doing is implementing some basic linear algebra,
+calculus, and state container to hold your chatbot's training. I was beyond sordidly
+wrong. I spent the first week of my project making a few stumbles here and there.
+The first problem I ran into my project is realizing that since a LSTM is a recurrent
+network (RNN), I have to learn how feed-forward neural networks learn (FFNN). I spent an
+entire week doing that, plus teaching myself linear algebra (I've never taken the
+class before) and refreshing my memory on partial derivatives. Once I had a basic concept
+of how FFNN work, I wanted to test my knowledge on implementing. By the time, I
+implemented forward propagation, I had about two weeks till due date. Continuing
+along, I spent another 4 days attempting to derive the equation for the summation
+of errors of my linear mapping equation. After that, I had to stop working on
+my algorithms project for most of the weekend because I had tests the following week.
+Now, one week + two days (your extension) before the project was due. I saw, I was
+not even close to creating a chatbot so I decided to resort to TensorFlow's Seq2seq
+library to create my chatbot. Then massive problems arose. To train a neural network
+with tensorflow, your computer has to be perfect on versioning or semi good specs,
+else nothing will work. Having a Debian server with a TitanX graphic card, dual Xeon
+eight cores, and 128gb of ram, I thought this would be a cake walk. WRONG.
+TensorFlow overheated the cpus. I decided to try setting up a docker instance on
+my laptop and I ended up getting random segmentation faults. I tried setting up
+tensorflow with my gpu and I ended up killing my server OS because there was a
+nvidia driver conflict. At this moment, 3 days have passed and I get really
+desperate. I end up paying for an AWS instance so I can train my dataset. Suddenly,
+things start to seem good until I started test my chatbot. The dataset was bad.
+Eight hours of training was wasted..
+
+I ended up finishing with a FFNN that can utilize a tanh or sigmoid activation and
+a semi working chatbot. But, did I meet my expectations?
+Definitely not. I did not meet my expectation for accomplish what I want in my project
+because of errors, the learning process, and the that this project needed more time.
+However, the fact I learned how neural networks work, how to get my around Debian,
+linear algebra, the relevance of calculus, and how to use tensorflow for basic
+machine learning, I'd say I definitely succeeded in the learning aspect of the project.
+
+If I were given more time, I would parse through reddit's dataset and use that data
+to train the LSTM. Also, I would want to do more in depth research on neural networks
+because I still felt like I rushed into a lot of the concepts.
+
+-	Researching the efficacy of a LSTM network based chat bot to
+pass a Turing Test with various users from Tinder, Facebook, and Twitter.
+- Utilized and setup TensorFlow's GPU library to train machine learning models
+- Implemented a Feed-Forward Network with a tanh and sigmoid activation function
